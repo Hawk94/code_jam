@@ -17,11 +17,25 @@ query. In order to reduce costs, the number of switches should be minimized.
 Your task is to tell us how many times the central system will have to switch between
 search engines, assuming that we program it optimally."""
 
-from ...utils import read_input, write_output
+from utils import read_input, write_output
 
 
-def get_search_engine(values):
-    search_engines = list()
+def get_test(values):
+    test_output = list()
     for i, j in enumerate(values):
         if i%3 == 0:
-            search_engines.append(j)
+            test_output.append(get_engine(values, i, j))
+
+    return 
+
+def get_search_engines(values, i, j):
+    search_engines = values[i+1:i+j]
+    return search_engines
+
+def get_searches(values, i, j):
+
+
+def get_switches(values):
+    test_case_index = [i for i in values if ]
+    
+    
